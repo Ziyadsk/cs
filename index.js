@@ -1,6 +1,8 @@
+#!/usr/bin/env node
 const fs = require("fs")
 const process = require("process");
 const wrap = require("word-wrap");
+const homePath = "/usr/local/lib/node_modules/@ziyadsk/cs/";
 
 function getArguments(){
 	const allowedArgs = ["-html","-css","-js"];
@@ -75,7 +77,7 @@ function displayCheat(type,title,cheatObj){
 
 function getCheat(getArgs){
 	const command = getArgs() ; 
-	fs.readFile(`cheats/en/${command.type}.json`,(err,data) => {
+	fs.readFile(`${homePath}/cheats/en/${command.type}.json`,(err,data) => {
 		if(err) {} 
 
 			const bigList = JSON.parse(data.toString());

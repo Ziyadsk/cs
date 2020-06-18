@@ -1,8 +1,17 @@
 {
-  "name": "cs",
-  "version": "1.0.0",
+  "name": "@ziyadsk/cs",
+  "version": "1.0.2",
   "description": "An Offline cheat sheet and a quick reference command line tool for HTML, CSS and JS .",
   "main": "index.js",
+	"repository": "github:ziyadsk/cs",
+	  "keywords": [
+    "command-line-app",
+    "cli",
+    "cheatsheet",
+    "html",
+    "css",
+    "js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,5 +20,9 @@
   "dependencies": {
     "word-wrap": "^1.2.3"
   },
+  "bin":{
+    "cs":"index.js"
+  },
+
   "files":["cheats"]
 }
