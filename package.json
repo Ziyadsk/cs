@@ -3,8 +3,8 @@
   "version": "1.0.2",
   "description": "An Offline cheat sheet and a quick reference command line tool for HTML, CSS and JS .",
   "main": "index.js",
-	"repository": "github:ziyadsk/cs",
-	  "keywords": [
+  "repository": "github:ziyadsk/cs",
+  "keywords": [
     "command-line-app",
     "cli",
     "cheatsheet",
@@ -18,11 +18,12 @@
   "author": "ziyadsk",
   "license": "MIT",
   "dependencies": {
-    "word-wrap": "^1.2.3"
+    "voca": "^1.4.0"
   },
-  "bin":{
-    "cs":"index.js"
+  "bin": {
+    "cs": "index.js"
   },
-
-  "files":["cheats"]
+  "files": [
+    "cheats"
+  ]
 }
